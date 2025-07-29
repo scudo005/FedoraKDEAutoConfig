@@ -17,6 +17,7 @@ sudo rpm --import "https://miktex.org/download/key"
 sudo curl -L -o /etc/yum.repos.d/miktex.repo https://miktex.org/download/fedora/41/miktex.repo
 sudo dnf update -y
 sudo dnf install miktex -y
+sudo systemctl disable bluetooth.service
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak update -y
 flatpak install com.vscodium.codium io.github.ungoogled_software.ungoogled_chromium com.valvesoftware.Steam org.keepassxc.KeePassXC org.mozilla.Thunderbird fr.handbrake.ghb fr.handbrake.ghb org.signal.Signal -y
