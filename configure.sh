@@ -1,7 +1,7 @@
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf update -y
-sudo dnf install wine fastfetch vlc python-vlc gcc g++ make dotnet-sdk-9.0 kdenlive gimp -y
+sudo dnf install wine fastfetch vlc python pip py ImageMagick python-vlc gcc g++ make dotnet-sdk-9.0 dotnet-sdk-8.0 kdenlive gimp -y
 sudo dnf remove dragon elisa-player -y
 sudo dnf autoremove -y
 IS_INTEL_HD_IGPU=$(lspci | grep "Intel Corporation HD")
